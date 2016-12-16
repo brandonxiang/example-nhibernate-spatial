@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="nhibernate"
+				   namespace="nhibernate.Model">
+  <class name="Product" table="Products">
+    <id name="id">
+      <generator class="int"/>
+    </id>
+    <property name="name" length="20" />
+    <property name="code" length="20" />
+  </class>
+</hibernate-mapping>
