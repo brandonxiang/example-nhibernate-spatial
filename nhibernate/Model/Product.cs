@@ -11,5 +11,7 @@ namespace nhibernate.Model
         public virtual int id { get; set; }
         public virtual string name { get; set; }
         public virtual string code { get; set; }
+
+        public virtual GeoAPI.Geometries.IGeometry Geometry { get; set; }
     }
 }

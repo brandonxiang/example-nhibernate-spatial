@@ -4,9 +4,10 @@
 				   namespace="nhibernate.Model">
   <class name="Product" table="Products">
     <id name="id">
-      <generator class="int"/>
+      <generator class="indentify"/>
     </id>
-    <property name="name" length="20" />
+    <property name="name" length="40" />
     <property name="code" length="20" />
+    <property name="Geometry" column="the_geom" type="NHibernate.Spatial.Type.GeometryType, NHibernate.Spatial" />
   </class>
 </hibernate-mapping>
